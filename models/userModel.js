@@ -24,6 +24,8 @@ const userSchema = new mongoose.Schema({
     enum: ["user", "HR", "admin"],
     default: "admin",
   },
+  gender: { type: String, enum: ["male", "female", "others"] },
+  phoneNumber: { type: Number },
   languages: { type: String },
   achievements: { type: String },
   socialMedia: [
